@@ -1,0 +1,10 @@
+version: '2.2'
+
+services:
+  e2e_c:
+    image: chatster/api-e2e-c
+    build: .
+    container_name: e2e_c
+    ports:
+      - 4000:4000
+      - 2930:2930
